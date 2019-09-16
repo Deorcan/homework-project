@@ -2,12 +2,14 @@
 
 
 <h1>Practice Question</h1>
-
-<p>Which of the following is the Single Responsiblity Principle?</p>
-
+<p>
+<%= q %>
+</p>
 <ul>
-<li> a) A class should have only one reason to change.</li>
-<li> b) Each developer on a team should have one main responsiblity.</li>
-<li> c) Every app will have one responsiblity that is most important to users.</li>
+<% answers.each do |a| %>
+<li><%= a %></li>
+<% end %>
+</ul>
+
 
 <p><%= link_to 'Profile Page', tmlmqist_path %> </p>
